@@ -1,0 +1,47 @@
+p {
+color: red;
+}
+
+/*Múltiplos valores*/
+
+p {
+color: red;
+width: 500px;
+/*border: 1px solid black;*/
+}
+
+/*Múltiplos elementos*/
+
+h2, h3 {
+	color: orange;
+}
+html {
+  font-size: 25px; 
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Cor de fundo*/
+html {
+  background-color: #DEE4E3;
+}
+
+body {
+  width: 600px; /*Isso força o corpo a ter 600 pixels de largura.*/
+  margin: 0 auto;/*1º elemento superiore e inferior/ 2º elemento, esquerdo e direito*/
+  background-color: #FBE7C7;
+  padding: 0 20px 20px 20px; /*superior, o lado direito, a parte inferior e o lado esquerdo*/
+  border: 5px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #CFB2B4;
+  text-shadow: 3px 3px 1px black;
+  /*
+O primeiro valor em pixel define o deslocamento horizontal da sombra do texto — até onde ele se move: um valor negativo deve movê-la para a esquerda.
+O segundo valor em pixel define o deslocamento vertical da sombra do texto — o quanto ela se move para baixo, neste exemplo; um valor negativo deve movê-la para cima.
+O terceiro valor em pixel define o raio de desfoque da sombra — um valor maior significará uma sombra mais borrada.
+O quarto valor define a cor base da sombra.
+  */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Aula_61</title>
+</head>
+<body>
+	<h2>O que podemos fazer com JavaScript?</h2>
+	<p id="demo">Podemos mudar o conteúdo de um elemento HTML.</p>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML = 'Olá, eu fui alterado pelo JavaScript!'">
+		Clique em mim!
+	</button>
+	<hr>
+	<p id="demo2">Podemos aplicar estilos em elementos HTML.</p>
+	<button type="button" onclick="document.getElementById('demo2').style.fontSize='30px'">
+		Clique em mim!
+	</button>
+	<hr>
+	<p>Podemos aplicar arquivos com JavaScript.</p>
+	<button type="button" onclick="document.getElementById('myImage').src='on.gif'">
+		Ligar
+	</button>
+	<img id="myImage" src="off.gif" style="width:100px">
+	<button type="button" onclick="document.getElementById('myImage').src='off.gif'">
+		Desligar
+	</button>
+	<hr>
+	<p id="demo3">Podemos esconder conteúdos de elementos HTML.</p>
+	<button type="button" onclick="document.getElementById('demo3').style.display = 'none'">
+		Clique em mim!
+	</button>
+	<hr>
+	<p>Podemos mostrar conteúdos de elementos HTML.</p>
+	<p id="demo4" style="display: none;">Olá mundo!</p>
+	<button type="button" onclick="document.getElementById('demo4').style.display='block'">
+		Clique em mim!
+	</button>
+	<hr>
+	<br>
+	<br>
+	<br>
+	
+</body>
+</html>

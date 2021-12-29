@@ -1,0 +1,60 @@
+<!--
+O Standard Generalized Markup Language (SGML) é uma metalinguagem através da qual se pode definir linguagens de marcação para documentos
+
+<QUOTE TYPE="html">
+  Tipicamente algo como <ITALICS>isto</ITALICS>
+</QUOTE>
+-->
+<!--
+Todas as marcações são realizadas pelas tags que em geral são estruturas de linguagem de marcação que contém instruções.
+-->
+
+<!--
+Tipos de Meta Tags
+HTTP-EQUIV:O atributo HTTP-EQUIV serve para controlar as ações do browser e também especificam melhor as informações, sendo que estas tem efeito equivalente quando são utilizadas diretamente na tag HTTP do cabeçalho.
+NAME: Meta tags com o atributo “name” são utilizadas quando os tipos não correspondem com o HTTP, ou seja, aquilo que não se adequar ao HTTP-EQUIV é utilizado no NAME. Mas alguns buscadores não chegam a fazer distinção sobre esses tipos de tags, por exemplo: A meta tag “keywords” pode ser utilizada tanto com o tipo “http-equiv” como o tipo “name”.
+DUBLIN CORE: Com o aumento da complexidade e necessidade de customização de Meta Tags, foi idealizado e criado uma linguagem de meta tags própria, chamado de Dublin Core, que permite maior flexibilidade aos autores. Neste artigo não abordaremos detalhes do uso desta linguagem, mas vale a pena saber que existem outras alternativas ao uso de Meta Tags.
+
+Atributos e Especificações
+
+Vimos na seção anterior quais os tipos de Meta Tags existentes e agora veremos que atributos podemos utilizar junto a elas:
+
+AUTHOR: Serve para identificar qual o nome do autor da página, geralmente o desenvolver ou a empresa desenvolvedora. Essa tag é utilizado com o tipo “name”, ou seja, você terá que definir name=”author”.
+
+CONTENT-LANGUAGE: Utilizado para declarar as linguagens utilizadas no conteúdo da página. Esse atributo é útil para categorizar a página conforme o idioma. Este é utilizado em conjunto com o tipo “http-equiv”.
+
+CONTENT-TYPE: Esta tag é uma das mais importantes e jamais deve ser esquecida pois ela define qual o tipo de conteúdo que a página contém e qual a codificação deste conteúdo. Assim fica fácil saber se iremos abrir uma página HTML ou um arquivo PDF.
+
+COPYRIGHT: Como o próprio nome já sugere, este serve para declarar os direitos autorais da página em questão.
+
+DESCRIPTION: Contém uma descrição/resumo sobre a página, utilizada por alguns mecanismos de busca.
+
+KEYWORDS: As palavras-chaves são utilizadas para ajudar na indexação da sua página pelos motores de busca, funcionam como uma categorização do conteúdo.
+
+REFRESH: Especifica o tempo em segundos para que o browser atualize a página de forma automática, pode-se também redirecionar para uma outra URL após esse tempo.
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="José Magalhães" />
+  <meta http-equiv="content-language" content="pt-br, en-US, fr" />
+  <meta http-equiv="content-type" content="text/html" />
+  <meta name="copyright" content="© 2021 SoulCode Academy" />
+  <meta name="description" content="Aula sobre introdução a HTML" />
+  <meta name="keywords" content="soulcode, aula, metatag, html">
+  <meta http-equiv="refresh" content="15;url=#" />
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Teste de conteúdo...</title>
+  <link rel="stylesheet" type="text/css" href="meuestilo.css">
+  <style>
+    p {color: red;}
+  </style>
+</head>
+<body>
+<p>Aqui será escrito algo...</p>
+</body>
+</html>
